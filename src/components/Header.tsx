@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-location'
 
 const Header: React.FC = () => {
     return (
@@ -21,10 +22,10 @@ const Header: React.FC = () => {
                             Home
                         </span>
                         <span className="navbar-item">
-                            Planets
+                            <Link to="/planets"> Planets</Link>
                         </span>
                         <span className="navbar-item">
-                            species
+                            Species
                         </span>
                         <span className="navbar-item">
                             Characters
@@ -44,11 +45,11 @@ const Header: React.FC = () => {
 
                                 </p>
                                 <p className="control">
-                                    <a className="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.9.3/bulma-0.9.3.zip">
+                                    <a className="button is-primary" href="https://github.com/dennism501/starwars-react-location">
                                         <span className="icon">
-                                            <i className="fas fa-download"></i>
+                                            <i className="fas fa-github"></i>
                                         </span>
-                                        <span>Download</span>
+                                        <span>Github</span>
                                     </a>
                                 </p>
                             </div>
