@@ -1,18 +1,10 @@
-import React, { useState } from 'react'
-import { useQuery } from 'react-query';
-import { getPlanets } from '../lib/api'
+import React from 'react'
+import Header from '../components/Header'
 
 export const Home: React.FC = () => {
-    const [planets, setPlanets] = useState([])
-
-    const { isLoading } = useQuery('planetsList', getPlanets, {
-        onSuccess: (data) => {
-            setPlanets(data)
-        }
-    })
     return (
-        <div>
-            {isLoading ? "Loading..." : JSON.stringify(planets)}
-        </div>
+        <>
+         <Header />   
+        </>
     )
 }
