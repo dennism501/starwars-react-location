@@ -4,7 +4,7 @@ import { Link } from 'react-location'
 const Header: React.FC = () => {
     return (
         <div>
-            <nav className="navbar is-transparent">
+            <nav className="navbar is-transparent m-3">
                 <div className="navbar-brand">
                     <a className="navbar-item" href="/">
                         <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28" />
@@ -35,15 +35,6 @@ const Header: React.FC = () => {
                     <div className="navbar-end">
                         <div className="navbar-item">
                             <div className="field is-grouped">
-                                <p className="control">
-                                    <span className="icon">
-                                        <i className="fab fa-twitter"></i>
-                                    </span>
-                                    <span>
-                                        Tweet
-                                    </span>
-
-                                </p>
                                 <p className="control">
                                     <a className="button is-primary" href="https://github.com/dennism501/starwars-react-location">
                                         <span className="icon">

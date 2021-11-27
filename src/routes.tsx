@@ -6,9 +6,12 @@ export const routes: Route[] = [
     {
         path: '/',
         element: <Home />,
+        children: [
+            {
+                path: 'planets',
+                element: <Planets />
+            }
+        ]
     },
-    {
-        path: '/planets',
-        element: <Planets />
-    }
+
 ]
